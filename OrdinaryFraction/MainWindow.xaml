@@ -1,0 +1,34 @@
+﻿<Window x:Class="OrdinaryFraction.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdinaryFraction"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="432" Width="842">
+    <Grid Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Button_sum" Content="Сумма" HorizontalAlignment="Left" Margin="368,63,0,0" VerticalAlignment="Top" Height="25" Width="78" Click="Button_sum_Click" Grid.Column="1"/>
+        <TextBox x:Name="TextBox_a1" HorizontalAlignment="Left" Margin="67,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TextBox_b1" HorizontalAlignment="Left" Margin="67,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_decimal_fraction" HorizontalAlignment="Left" Height="25" Margin="626,63,0,0" VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TextBox_a2" HorizontalAlignment="Left" Margin="216,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TextBox_b2" HorizontalAlignment="Left" Margin="216,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Label x:Name="Label_f1" Content="Первая дробь" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="67,32,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label_f2" Content="Вторая дробь" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="216,32,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label_answer" Content="Ответ" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="477,32,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_answer1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="477,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBox_answer2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="477,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Button_decimal_fraction" Content="Перевести в десятичную дробь" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="626,35,0,0" VerticalAlignment="Top" Click="Button_decimal_fraction_Click"/>
+        <Button x:Name="Button_diff" Content="Разница" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="367,95,0,0" VerticalAlignment="Top" Height="24" Width="79" Click="Button_diff_Click"/>
+        <Button x:Name="Button_mult" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="367,124,0,0" VerticalAlignment="Top" Height="24" Width="79" Content="Умножение" Click="Button_mult_Click"/>
+        <Button x:Name="Button_division" Content="Деление" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="367,153,0,0" VerticalAlignment="Top" Height="21" Width="79" Click="Button_division_Click"/>
+        <Label x:Name="Label_to_string" Content="" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="44" Margin="477,142,0,0" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="Button_to_string" Content="В строку" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="498,116,0,0" VerticalAlignment="Top" Width="78" Click="Button_to_string_Click"/>
+        <Label x:Name="Label_error" Content="" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="127,118,0,0" VerticalAlignment="Top" Width="143"/>
+
+    </Grid>
+</Window>
